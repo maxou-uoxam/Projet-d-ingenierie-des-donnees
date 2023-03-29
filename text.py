@@ -36,3 +36,38 @@ Matplotlib est une bibliothèque de visualisation de données en Python qui perm
 ## Présentation du code :
 Le code est trouvable dans les fichiers main.py, constant.py et est commenté.
 """
+
+presentation_data = """
+---
+## Description des données
+### Event :skull_and_crossbones: :
+L'événement désigne tout événement significatif survenant au cours du traitement du myélome multiple d'un patient, tel que la progression de la maladie, l'hospitalisation ou le décès.
+### Time :hourglass_flowing_sand: :
+Le temps fait référence à la durée de divers événements liés au traitement du myélome multiple, tels que le temps écoulé entre le diagnostic et le début du traitement, la durée du traitement ou le temps écoulé jusqu'à la progression de la maladie.
+### Genero :female_sign:/:male_sign: :
+Le genre fait référence aux caractéristiques sociales et culturelles qui définissent ce que signifie être un homme ou une femme dans une société donnée.  
+### IMC :balance_scale: :
+L'indice de masse corporelle (IMC) est une mesure utilisée pour évaluer si une personne a un poids sain par rapport à sa taille. Il est calculé en divisant le poids d'une personne en kilogrammes par le carré de sa taille en mètres (IMC = poids / taille^2).  
+### regimenafiliacion :memo: :
+Il s'agit de l'ensemble des règles, exigences et procédures qui établissent les conditions d'adhésion d'une personne à un système de santé.  
+### Anemia :drop_of_blood: :
+Il s'agit d'un état dans lequel l'organisme ne dispose pas de suffisamment de globules rouges sains pour transporter l'oxygène vers les tissus de l'organisme. L'anémie peut être causée par divers facteurs, notamment un manque de fer, une carence en vitamine B12 ou en acide folique, des maladies chroniques, etc.  
+### Fragilidad :man_in_manual_wheelchair: :
+Il s'agit d'un état dans lequel une personne connaît une diminution de sa force musculaire, de sa mobilité et de son endurance physique.  
+### FISHdel17p1 :dna: :
+FISH signifie Fluorescence In Situ Hybridization, une technique utilisée en biologie moléculaire pour détecter et localiser des séquences d'ADN spécifiques dans les chromosomes. Del17p1 désigne la délétion de matériel génétique sur le bras court du chromosome 17, qui est une anomalie génétique fréquemment observée dans certains types de cancer, notamment la leucémie lymphoïde chronique (LLC). La FISH(del17p1) est un test qui utilise des sondes fluorescentes pour détecter cette anomalie génétique dans les cellules du sang ou de la moelle osseuse d'un patient.  
+### subclasificacionplataformaMM :microscope: :
+La sous-classification par plate-forme est une façon de classer les différents types de tests moléculaires en fonction de la technologie ou de la plate-forme utilisée pour effectuer le test. Par exemple, le FISH est un type de test moléculaire qui utilise des sondes fluorescentes pour détecter des séquences d'ADN spécifiques, tandis que la PCR (réaction en chaîne de la polymérase) est un autre type de test moléculaire qui amplifie des séquences d'ADN pour les détecter. La sous-classification par plate-forme peut être utile pour comparer les performances et la sensibilité de différents types de tests moléculaires pour la détection d'anomalies ou de mutations génétiques spécifiques.  
+### ISSPlataforma1 :test_tube: :
+ISS par la plateforme : ISS signifie International Staging System (système international de stadification), un système utilisé pour classer le myélome multiple en fonction de divers facteurs cliniques et de laboratoire, tels que les taux d'albumine sérique et de bêta-2 microglobuline. L'ISS par la plateforme fait référence à l'utilisation d'une plateforme ou d'une technologie spécifique pour classer les patients atteints de myélome multiple en différents stades selon les critères de l'ISS.  
+### tToMM1 :syringe: :
+Traitement du myélome multiple 1 : Le traitement du myélome multiple 1 fait référence à la première ligne de traitement prescrite à un patient atteint de myélome multiple, qui peut inclure la chimiothérapie, l'immunothérapie ou d'autres traitements.  
+### tToMM2 :syringe: :
+Traitement du myélome multiple 2 : Le traitement du myélome multiple 2 désigne la deuxième ligne de traitement prescrite à un patient atteint de myélome multiple, généralement après que la première ligne de traitement n'a pas permis de contrôler la maladie ou a entraîné une progression de la maladie.  
+"""
+
+presentation_transformation = """
+---
+## Transformations ajoutées
+
+"""

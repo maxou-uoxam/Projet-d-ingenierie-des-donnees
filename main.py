@@ -7,6 +7,7 @@ import plotly.graph_objects as go
 import matplotlib as plt
 from streamlit_option_menu import option_menu
 import hydralit_components as hc
+from random import randint
 
 # Import files
 import constant
@@ -20,13 +21,31 @@ def load_data():
     return data
 
 
-def print_data():
+def print_data(data):
     show_data = st.checkbox(
         label="Montrer les données",
         value=False
     )
     if show_data:
         st.write(data)
+
+
+def transform_data(data):
+    for i in range(len(data.index)):
+        data.loc[i, 'time2'] = data.loc[i, 'time'] - randint(1, data.loc[i, 'time']-1)
+        x = randint(1, 9)
+        if x < 3:
+            data.loc[i, 'hospitalisation'] = True
+        else:
+            data.loc[i, 'hospitalisation'] = False
+        age = randint(16, 102)
+        if age < 50:
+            data.loc[i, 'tranche_age'] = "Age < 50"
+        elif age < 65:
+            data.loc[i, 'tranche_age'] = "Age 50 - 64"
+        else:
+            data.loc[i, 'tranche_age'] = "Age 65+"
+    return data
 
 
 def top_menu():
@@ -44,11 +63,14 @@ def top_menu():
     # Affichage de la page de présentation des données (visualisation et explication)
     if menu == "data":
         "# 📖 Lecture des données"
-        print_data()
+        print_data(data)
+        st.write(text.presentation_data)
     
     # Affichage des données une fois transformée et explication du code utilisé ainsi que de notre façon de faire.
     if menu == "transform-data":
         "# ⚙️ Transformation des données"
+        print_data(data_transform)
+        st.write(text.presentation_transformation)
     
     # Affichage des statistiques descriptives
     if menu == "stats":
@@ -83,8 +105,7 @@ def left_menu():
 
 
 data = load_data()
-
-
+data_transform = transform_data(data)
 
 # Page web :
 top_menu()
