@@ -66,8 +66,21 @@ Traitement du myélome multiple 1 : Le traitement du myélome multiple 1 fait r�
 Traitement du myélome multiple 2 : Le traitement du myélome multiple 2 désigne la deuxième ligne de traitement prescrite à un patient atteint de myélome multiple, généralement après que la première ligne de traitement n'a pas permis de contrôler la maladie ou a entraîné une progression de la maladie.  
 """
 
-presentation_transformation = """
+presentation_transformation_title_time2 = """
 ---
 ## Transformations ajoutées
+### Ajout de la variable time2
+Nous avons ajouté la variable **time2** qui représente le temps avant hospitalisation. Cette donnée est comprise aléatoirement entre 1 et la date time - 1.
+"""
 
+presentation_transformation_hospitalisation = """
+### Ajout de la variable hospitalisation
+Nous avons ajouté la variable **hospitalisation** qui indique si le patient a été hospitalisé ou non (comme pour Evento).
+La répartition est d'environ 1/3 hospitalisé et 2/3 non hospitalisé.
+"""
+
+presentation_transformation_tranche_age = """
+### Ajout de la variable tranche d'âge
+Nous avons ajouté la variable **tranche_age** qui donne un âge aléatoire au patient entre 16 ans (âge légal à partir duquel un enfant peut répondre à un questionnaire sans autorisation parentale) et 112 ans (âge de la doyenne en France en 2023).
+Suivant l'âge qui est donné, le patient fera parti de la tranche d'âge des *moins de 50 ans*, *entre 50 et 64 ans* ou des *plus de 65 ans*.
 """

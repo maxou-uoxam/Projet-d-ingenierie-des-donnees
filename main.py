@@ -12,6 +12,7 @@ from random import randint
 # Import files
 import constant
 import text
+import code_text
 
 
 # Fonctions
@@ -28,6 +29,16 @@ def print_data(data):
     )
     if show_data:
         st.write(data)
+
+
+def print_code(text, key):
+    show_code = st.checkbox(
+        label="Montrer le code",
+        value=True,
+        key=key
+    )
+    if show_code:
+        st.code(text, 'python')
 
 
 def transform_data(data):
@@ -70,7 +81,11 @@ def top_menu():
     if menu == "transform-data":
         "# ⚙️ Transformation des données"
         print_data(data_transform)
-        st.write(text.presentation_transformation)
+        st.write(text.presentation_transformation_title_time2)
+        print_code(code_text.code_time2, "time2")
+        st.write(text.presentation_transformation_hospitalisation)
+        print_code(code_text.code_hospitalisation, "hospital")
+        st.write(text.presentation_transformation_tranche_age)
     
     # Affichage des statistiques descriptives
     if menu == "stats":
