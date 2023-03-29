@@ -1,0 +1,52 @@
+Numero_paciente;Genero;IMC;Regimenafiliacion;Anemia;Hipercalcemia;ERC_Leve;ERC_moderada;ERC_severa;ERC_dialisis;Lesiones_oseas;Infecciones_recurrentes;Fragilidad;FISHdel17p1;FISHt_1114;FISHt414;FISHamp1q211;FISHother;SubclasificacionplataformaMM;ISSPlataforma1;CoadOseo1;AdherenciaTtoMM1Mto1;Oportunidadtratamiento;Dias_suspendidos;Dias_en_terapia;Fecha_respuesta_clinica;RespuestaClinica;Evento;time;TtoMM1;TtoMM2
+1001;F;21,3;Contributivo;NO;NO;NO;NO;NO;SI;NO;NO;SI;NO;SI;NO;NO;NO;Riesgo Alto;No aplica;Acido selendronico;33;64;0;189;07/12/2018;NA;0;189;L(rd);L
+1002;F;24,4;Subsidiado;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;25;94;0;246;11/05/2019;NA;0;246;BLd(rs);BLd
+1003;M;21,8;Contributivo;NO;NO;NO;SI;NO;NO;SI;NO;NO;SD;SD;SD;SD;SD;No candidato trasplante;No clasificable;;5;66;29;300;15/02/2018;NA;0;329;BLd(rm);BLd
+1004;F;26,2;Contributivo;NO;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 2;Acido selendronico;77;65;0;334;03/11/2019;NA;0;334;Ld(rm);Ld
+1005;M;28,1;Contributivo;NO;NO;NO;SI;NO;NO;NO;SI;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 2;Acido selendronico;;SD;0;SD;25/06/2019;NA;0;611;BCd;BCd
+1006;M;19,7;Contributivo;NO;SI;NO;SI;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 2;Acido selendronico;60;57;0;128;26/12/2018;NA;0;128;BLd(rm);BLd
+1007;F;20,3;Subsidiado;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;No clasificable;No aplica;;;SD;0;SD;29/03/2018;NA;0;514;Observacion;Observacion
+1008;F;19,5;Contributivo;NO;NO;SI;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;Candidato Trasplante;Estadio 3;;45;65;0;240;12/09/2019;NA;0;240;BTd;BTd
+1009;F;24,3;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;Candidato Trasplante;Estadio 3;;93;97;0;281;03/08/2018;NA;0;281;BCd;BCd
+1010;M;28,5;Subsidiado;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;2;70;22;159;20/03/2019;EE;0;181;Ld;Ld
+1011;F;17,2;Contributivo;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;Candidato Trasplante;Estadio 3;;;SD;0;SD;07/10/2018;EE;0;284;BTd;BTd
+1012;M;24,6;Contributivo;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;Riesgo Alto;No aplica;;50;93;0;52;13/05/2019;NA;0;61;L;L
+1012;M;24,55775234;Contributivo;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;No estadificable;;74;62;0;10;20/10/2019;EP;1;10;BLd;BLd
+1013;F;21;Contributivo;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;Riesgo Alto;No aplica;;;SD;0;SD;24/03/2019;EE;0;107;Observacion;Observacion
+1014;F;22;Contributivo;NO;NO;SI;NO;NO;NO;SI;NO;SI;SI;NO;NO;NO;NO;Candidato trasplante;Estadio 2;;31;52;0;179;23/05/2019;EE;0;179;BLd;BLd
+1015;M;21,5;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;NO;NO;NO;No candidato trasplante;Estadio 3;;;67;0;216;28/06/2019;RCE;0;216;Ld;Ld
+1016;F;29,6;Basico;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;Riesgo No Alto;No aplica;;50;99;0;67;21/09/2019;NA;0;56;Observacion;Observacion
+1016;F;29,64268547;Basico;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;;No estadificable;Acido selendronico;;43925;0;SD;02/03/2020;EP;1;61;BLd;BLd
+1017;M;23,4;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;90;77;0;186;18/06/2019;NA;0;186;BLd;BLd
+1018;F;27,8;Subsidiado;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 2;;17;57;30;157;04/03/2019;NA;0;187;BLd;BLd
+1019;F;28,5;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;No candidato trasplante;Estadio 1;Acido selendronico;;SD;0;SD;29/04/2018;NA;0;314;Ld;Ld
+1020;M;24;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;Riesgo Alto;No aplica;;99;80;0;180;23/11/2019;NA;0;180;Observacion;Observacion
+1021;M;22;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;96;85;0;165;14/12/2018;NA;0;165;BLd;BLd
+1022;M;23,4;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;Riesgo No Alto;No aplica;;5;77;27;165;26/10/2018;NA;0;192;Observacion;Observacion
+1023;M;20,3;Contributivo;SI;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;NO;NO;NO;Riesgo Alto;No aplica;;;72;0;SD;15/08/2019;NA;0;56;L;L
+1023;M;20,33832645;Contributivo;SI;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;NO;NO;NO;;Estadio 3;Acido selendronico;;;0;SD;25/01/2020;EP;1;56;DKd;DKd
+1024;M;22,5;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;77;79;0;219;07/01/2018;NA;0;219;BLd;BLd
+1025;M;19,4;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 3;;75;75;0;155;09/03/2018;NA;0;155;BLd;BLd
+1026;M;25,5;Subsidiado;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;Riesgo Alto;No aplica;;75;85;0;215;26/03/2018;NA;0;215;L;L
+1027;M;17,7;Contributivo;NO;NO;NO;NO;NO;NO;SI;SI;SI;SI;NO;SI;NO;NO;No candidato trasplante;Estadio 3;;50;59;0;259;25/04/2019;NA;0;259;BLd;BLd
+1028;M;31,1;Contributivo;SI;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;SI;NO;NO;No candidato trasplante;Estadio 3;;;59;0;SD;28/09/2018;NA;0;110;BCd;BCd
+1028;M;31,13898513;Contributivo;SI;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;SI;NO;NO;;Estadio 3;;50;49;0;83;29/04/2019;EP;1;140;DLd;DLd
+1029;M;26,5;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;Riesgo No Alto;No aplica;;10;83;23;236;09/11/2019;NA;0;259;Observacion;Observacion
+1030;F;21,6;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;Riesgo Alto;No aplica;;75;45;0;103;15/06/2018;NA;0;103;Observacion;Observacion
+1031;M;31,6;Basico;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;69;72;0;232;25/04/2018;NA;0;100;BLd;BLd
+1031;M;31,57756239;Basico;NO;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;;Estadio 3;Acido selendronico;25;85;0;69;19/11/2018;EP;1;159;DKd;DKd
+1032;F;21;Subsidiado;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;No aplica;;84;80;0;269;29/03/2018;NA;0;269;Ld;Ld
+1033;M;24,2;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;SI;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;30;96;0;255;11/05/2018;NA;0;255;BLd;BLd
+1034;M;26,7;Contributivo;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;80;98;0;260;05/11/2019;NA;0;260;BLd;BLd
+1035;F;28,2;Subsidiado;SI;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;Riesgo No Alto;No aplica;;5;65;22;194;19/10/2018;NA;0;216;L;L
+1036;F;20,4;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;Riesgo Alto;No aplica;;;SD;0;SD;01/11/2018;NA;0;104;Observacion;Observacion
+1036;F;20,42835711;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;Candidato trasplante;No clasificable;Acido selendronico;50;91;0;52;30/05/2019;EP;1;150;BLd;BLd
+1037;M;29,2;Contributivo;NO;SI;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;SI;NO;Candidato Trasplante;Estadio 2;Acido selendronico;91;74;0;190;30/01/2018;NA;0;61;BLd;BLd
+1037;M;29,24210864;Contributivo;NO;SI;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;SI;NO;;Estadio 2;Acido selendronico;75;81;0;104;28/08/2018;EP;1;188;DLd;DLd
+1038;M;19,7;Basico;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;NO;NO;NO;No candidato trasplante;Estadio 2;Acido selendronico;61;86;0;203;20/10/2018;NA;0;84;BLd;BLd
+1038;M;19,70553242;Basico;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;NO;NO;NO;;Estadio 3;Acido selendronico;75;68;0;133;17/05/2019;EP;1;205;DLd;DLd
+1039;F;16,7;Subsidiado;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;No candidato trasplante;Estadio 3;Acido selendronico;75;76;0;263;11/07/2018;NA;0;190;BLd;BLd
+1039;F;16,70620468;Subsidiado;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;;Estadio 2;Acido selendronico;90;83;0;52;07/04/2019;EP;1;52;DLd;DLd
+1040;F;20,2;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;Candidato Trasplante;Estadio 3;Acido selendronico;90;83;0;194;31/08/2019;NA;0;72;BLd;BLd
+1040;F;20,19557823;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;Candidato Trasplante;Estadio 2;Acido selendronico;100;79;0;47;01/04/2020;EP;1;133;DLd;DLd
+1040;F;20,19557823;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;Candidato Trasplante;No clasificable;Acido selendronico;100;89;0;13;30/07/2020;EP;1;112;P;P

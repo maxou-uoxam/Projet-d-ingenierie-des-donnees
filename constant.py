@@ -5,7 +5,7 @@
 menu = [
     {'label': "Accueil", 'icon': "🏠", 'id': "home"},
     {'label': "Lecture des données", 'icon': "📖", 'id': "data"},
-    {'label': "Traitement des données manquantes", 'icon': "⚙️", 'id': "transform-data"},
+    {'label': "Transformation des données", 'icon': "⚙️", 'id': "transform-data"},
     {'label': "Statistiques descriptives", 'icon': "🧮", 'id': "stats"},
     {'label': "Représentations graphiques des variables", 'icon': "📊", 'id': "variables"},
     {'label': "Probabilités de survie et courbe de survie", 'icon': "📈", 'id': "survie"},

@@ -11,3 +11,14 @@ for i in range(len(data.index)):
     else:
         data.loc[i, 'hospitalisation'] = False
 """
+
+code_tranche_age = """
+for i in range(len(data.index)):
+    age = randint(16, 102)
+    if age < 50:
+        data.loc[i, 'tranche_age'] = "Age < 50"
+    elif age < 65:
+        data.loc[i, 'tranche_age'] = "Age 50 - 64"
+    else:
+        data.loc[i, 'tranche_age'] = "Age 65+"
+"""

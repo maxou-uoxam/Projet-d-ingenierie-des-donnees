@@ -86,6 +86,7 @@ def top_menu():
         st.write(text.presentation_transformation_hospitalisation)
         print_code(code_text.code_hospitalisation, "hospital")
         st.write(text.presentation_transformation_tranche_age)
+        print_code(code_text.code_tranche_age, "tranche_age")
     
     # Affichage des statistiques descriptives
     if menu == "stats":
