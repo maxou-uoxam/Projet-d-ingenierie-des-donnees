@@ -69,13 +69,11 @@ def top_menu():
     if menu == "home":
         "# 🏠 Accueil"
         st.write(text.home)
-    
     # Affichage de la page de présentation des données (visualisation et explication)
     if menu == "data":
         "# 📖 Lecture des données"
         print_data(data)
         st.write(text.presentation_data)
-    
     # Affichage des données une fois transformée et explication du code utilisé ainsi que de notre façon de faire.
     if menu == "transform-data":
         "# ⚙️ Transformation des données"
@@ -86,7 +84,6 @@ def top_menu():
         print_code(code_text.code_hospitalisation, "hospital")
         st.write(text.presentation_transformation_tranche_age)
         print_code(code_text.code_tranche_age, "tranche_age")
-    
     # Affichage des statistiques descriptives
     if menu == "stats":
         "# 🧮 Statistiques descriptives"
@@ -94,11 +91,9 @@ def top_menu():
     # Affichage des variables telles que demandées dans le sujet.
     if menu == "variables":
         "# 📊 Représentations graphiques des variables"
-    
     # Affichage des probabilités de survie et des courbes de survie.
     if menu == "survie":
         "# 📈 Probabilités de survie et courbes de survie"
-    
     # Affichage des prédictions.
     if menu == "prédiction":
         "# 🔎 Prédiction de survie d'un individu"
@@ -106,7 +101,6 @@ def top_menu():
     # Affichage de la régression de Cox.
     if menu == "régression":
         "# 📉 Modèle de régression de Cox"
-    
     # Affichage de l'analyse coût-efficacité.
     if menu == "coût-efficacité":
         "# 🔎 Analyse coût-efficacité"
