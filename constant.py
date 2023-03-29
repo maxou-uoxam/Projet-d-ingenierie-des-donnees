@@ -1,3 +1,4 @@
+data_file = "données/MockPatientDatabaseOscar.csv"
 # Création du menu :
 #   id : identifiant de l'onglet (facultatif).
 #   label : Le nom de l'onglet tel qu'il apparaît dans le menu.
@@ -13,3 +14,25 @@ menu = [
     {'label': "Modèle de régression de Cox", 'icon': "📉", 'id': "régression"},
     {'label': "Analyse coût-efficacité", 'icon': "🧐", 'id': "coût-efficacité"}
 ]
+
+# Création d'une liste de colonnes pour créer les filtres dans l'application.
+# clé: valeur
+# [nom compréhensible]: [nom de la colonne]
+option_descriptives = {
+    "Temps": "time",
+    "Mortalité": "Evento",
+    "Indice de Masse Corporelle": "IMC",
+    "Assurance maladie": "Regimenafiliacion",
+    "Anémie": "Anemia",
+    "Fragilité": "Fragilidad",
+    "FISH (del17p1)": "FISHdel17p1",
+    "Sous-classification par plateforme": "SubclasificacionplataformaMM",
+    "ISS par la plateforme": "ISSPlataforma1",
+    "Traitement du myélome multiple 1": "TtoMM1",
+    "Traitement du myélome multiple 2": "TtoMM2",
+    "Temps avant hospitalisation": "time2",
+    "Hospitalisation": "hospitalisation",
+    "Tranche d'âge": "tranche_age",
+}
+# Récupération des clé dans une liste.
+list_option_descriptives_label = list(option_descriptives.keys())

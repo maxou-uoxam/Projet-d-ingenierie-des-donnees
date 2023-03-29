@@ -96,7 +96,7 @@ Nous n’avons pas d’informations sur le jeu de données et nous n’en avons 
 Le jeu de données s’appelle MockPatientDatabaseOscar, « mock patient » voulant dire « faux patient », ce doit être un
 jeu de données factice représentant une population de personnes en train de se faire soigner.
 
-### Event :skull_and_crossbones: :
+### Evento :skull_and_crossbones: :
 
 L'événement désigne tout événement significatif survenant au cours du traitement du myélome multiple d'un patient,
 tel que la progression de la maladie, l'hospitalisation ou le décès.\\
@@ -120,7 +120,7 @@ sa taille.\\
 Il est calculé en divisant le poids d'une personne en kilogrammes par le carré de sa taille en mètres
 (IMC = poids / taille^2).
 
-### regimenafiliacion :memo: :
+### Regimenafiliacion :memo: :
 
 Il s'agit de l'ensemble des règles, exigences et procédures qui établissent les conditions d'adhésion d'une personne
 à un système de santé.
@@ -145,7 +145,7 @@ le bras court du chromosome 17, qui est une anomalie génétique fréquemment ob
 notamment la leucémie lymphoïde chronique (LLC). La FISH(del17p1) est un test qui utilise des sondes fluorescentes pour
 détecter cette anomalie génétique dans les cellules du sang ou de la moelle osseuse d'un patient.
 
-### subclasificacionplataformaMM :microscope: :
+### SubclasificacionplataformaMM :microscope: :
 
 La sous-classification par plate-forme est une façon de classer les différents types de tests moléculaires en fonction
 de la technologie ou de la plate-forme utilisée pour effectuer le test.\\
@@ -163,14 +163,14 @@ d'albumine sérique et de bêta-2 microglobuline. L'ISS par la plateforme fait r
 ou d'une technologie spécifique pour classer les patients atteints de myélome multiple en différents stades selon les
 critères de l'ISS.
 
-### tToMM1 :syringe: :
+### TtoMM1 :syringe: :
 
 Traitement du myélome multiple 1 :\\
 Le traitement du myélome multiple 1 fait référence à la première ligne de traitement
 prescrite à un patient atteint de myélome multiple, qui peut inclure la chimiothérapie, l'immunothérapie ou d'autres
 traitements.
 
-### tToMM2 :syringe: :
+### TtoMM2 :syringe: :
 
 Traitement du myélome multiple 2 :\\
 Le traitement du myélome multiple 2 désigne la deuxième ligne de traitement
@@ -193,7 +193,7 @@ presentation_transformation_hospitalisation = """
 ### Ajout de la variable hospitalisation
 
 Nous avons ajouté la variable **hospitalisation** qui indique si le patient a été hospitalisé ou non
-(comme pour Evento).
+(comme pour Evento).\\
 La répartition est d'environ 1/3 hospitalisé et 2/3 non hospitalisé.
 """
 
@@ -203,7 +203,7 @@ presentation_transformation_tranche_age = """
 
 Nous avons ajouté la variable **tranche_age** qui donne un âge aléatoire au patient entre 16 ans (âge légal à partir
 duquel un enfant peut répondre à un questionnaire sans autorisation parentale) et 112 ans (âge de la doyenne en France
-en 2023).
+en 2023).\\
 Suivant l'âge qui est donné, le patient fera parti de la tranche d'âge des *moins de 50 ans*, *entre 50 et 64 ans* ou
 des *plus de 65 ans*.
 """
