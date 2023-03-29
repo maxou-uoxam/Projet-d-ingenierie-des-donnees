@@ -1,4 +1,6 @@
+# Chemin vers le fichier de données.
 data_file = "données/MockPatientDatabaseOscar.csv"
+
 # Création du menu :
 #   id : identifiant de l'onglet (facultatif).
 #   label : Le nom de l'onglet tel qu'il apparaît dans le menu.
