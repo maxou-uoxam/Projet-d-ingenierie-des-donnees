@@ -1,8 +1,9 @@
 # Import
 import streamlit as st
 import pandas as pd
+import numpy as np
+import plotly.express as px
 # import lifelines
-# import plotly.express as px
 # import plotly.graph_objects as go
 # import matplotlib as plt
 import hydralit_components as hc
@@ -13,6 +14,8 @@ from typing import Union
 import constant
 import text
 import code_text
+
+# Global
 
 
 # Fonctions
@@ -99,6 +102,51 @@ def print_statistiques_descriptives(data: pd.DataFrame) -> None:
     st.write(stats)
 
 
+def filtered_data(data: pd.DataFrame, filters: dict) -> pd.DataFrame:
+    """
+    Filtres les données et les renvoient
+    """
+    if filters is None:
+        return data
+    else:
+
+        for filter in filters:
+            if filters[filter] != []:
+                data = data[data[filter].isin(filters[filter])]
+    return data
+
+
+def plot_hist_for_data_representation(data: pd.DataFrame, filters: dict) -> None:
+    """
+    Créé un histogramme pour l'ensemble de la population ou par genre.
+    - Vert pour l'ensemble de la population (tous les genres).
+    - Bleu pour la population masculine.
+    - Rouge pour la population féminine.
+    """
+    fig_all_genre = px.histogram(data, x='time', color_discrete_sequence=['forestgreen'])
+    fig_men = px.histogram(data.loc[data['Genero'] == 'M'], x='time', color_discrete_sequence=['deepskyblue'])
+    fig_women = px.histogram(data.loc[data['Genero'] == 'F'], x='time', color_discrete_sequence=['indianred'])
+
+    if "Genero" in filters:
+        st.write(filters["Genero"])
+        genres = filters["Genero"]
+        if genres == [] or ("F" in genres and "M" in genres):
+            fig = fig_all_genre
+        elif "M" in genres:
+            fig = fig_men
+        else:
+            fig = fig_women
+    else:
+        option = st.selectbox('Afficher l\'histogramme pour :', ('Population', 'Hommes', 'Femmes'))
+        if option == 'Population':
+            fig = fig_all_genre
+        elif option == 'Hommes':
+            fig = fig_men
+        else:
+            fig = fig_women
+    st.plotly_chart(fig)
+
+
 def top_menu() -> None:
     """
     Affiche le menu horizontal et également le contenu des pages une fois choisies sur le menu.
@@ -110,6 +158,14 @@ def top_menu() -> None:
         hide_streamlit_markers=True
     )
 
+    # Création des filtres
+    filters = left_menu()
+
+    # Filtration des données de base
+    data_filtered = filtered_data(data=data, filters=filters)
+    # Filtration des données transformées
+    data_transform_filtered = filtered_data(data=data_transform, filters=filters)
+
     # Affichage de la page d'accueil avec la présentation du sujet, des données, de python et des librairies utilisées.
     if menu == "home":
         "# 🏠 Accueil"
@@ -117,13 +173,13 @@ def top_menu() -> None:
     # Affichage de la page de présentation des données (visualisation et explication)
     if menu == "data":
         "# 📖 Lecture des données"
-        print_data(data)
+        print_data(data_filtered)
         st.write(text.presentation_data)
         print_code(code_text.load_data, "load_data", True)
     # Affichage des données une fois transformée et explication du code utilisé ainsi que de notre façon de faire.
     if menu == "transform-data":
         "# ⚙️ Transformation des données"
-        print_data(data_transform)
+        print_data(data_transform_filtered)
         st.write(text.presentation_transformation_title_time2)
         print_code(code_text.code_time2, "time2")
         st.write(text.presentation_transformation_hospitalisation)
@@ -133,11 +189,12 @@ def top_menu() -> None:
     # Affichage des statistiques descriptives
     if menu == "stats":
         "# 🧮 Statistiques descriptives"
-        print_statistiques_descriptives(data_transform)
+        print_statistiques_descriptives(data_transform_filtered)
         print_code(code_text.code_stats_descriptives, "stats_descriptives", True)
     # Affichage des variables telles que demandées dans le sujet.
     if menu == "variables":
         "# 📊 Représentations graphiques des variables"
+        plot_hist_for_data_representation(data=data_transform_filtered, filters=filters)
     # Affichage des probabilités de survie et des courbes de survie.
     if menu == "survie":
         "# 📈 Probabilités de survie et courbes de survie"
@@ -152,14 +209,28 @@ def top_menu() -> None:
         "# 🔎 Analyse coût-efficacité"
 
 
-def left_menu() -> None:
+def left_menu() -> dict:
     """
     Affiche des éléments dans le menu vertical gauche (natif à streamlit).
     """
-    st.sidebar.select_slider(
-        label="Temps",
-        options=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    )
+    filters = {}
+    tab1, tab2 = st.sidebar.tabs(["Choix des colonnes à filrer", "Filtres"])
+
+    with tab1:
+        choices = st.multiselect(
+            label="Colonnes :",
+            options=constant.list_filters,
+        )
+    with tab2:
+        if choices == []:
+            st.write("Veuillez choisir des colonnes à filtrer auparavant.")
+        else:
+            for choice in choices:
+                filters[constant.filters.get(choice)] = st.multiselect(
+                    label=choice,
+                    options=np.unique(data_transform[constant.filters.get(choice)])
+                )
+    return filters
 
 
 # Charge les données
@@ -169,4 +240,3 @@ data_transform = transform_data(data)
 
 # Page web :
 top_menu()
-left_menu()

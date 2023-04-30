@@ -38,3 +38,19 @@ option_descriptives = {
 }
 # Récupération des clé dans une liste.
 list_option_descriptives_label = list(option_descriptives.keys())
+
+filters = {
+    "Genre": "Genero",
+    "Tranche d'âge": "tranche_age",
+    "Indice de Masse Corporelle": "IMC",
+    "Assurance maladie": "Regimenafiliacion",
+    "Anémie": "Anemia",
+    "Fragilité": "Fragilidad",
+    "FISH (del17p1)": "FISHdel17p1",
+    "Sous-classification par plateforme": "SubclasificacionplataformaMM",
+    "ISS par la plateforme": "ISSPlataforma1",
+    "Traitement du myélome multiple 1": "TtoMM1",
+    "Traitement du myélome multiple 2": "TtoMM2",
+}
+
+list_filters = list(filters.keys())
