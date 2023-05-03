@@ -43,7 +43,15 @@ Lifelines permet de modéliser et d'analyser des données de survie à l'aide de
 fonction de survie, l'analyse de la durée de vie, les courbes de Kaplan-Meier, les modèles de régression Cox et bien
 d'autres encore. Elle fournit également des fonctionnalités pour l'analyse des données censurées,
 telles que les données de survie tronquées, les données de survie avec des valeurs manquantes, les données de survie
-intervalles et bien d'autres encore.
+intervalles et bien d'autres encore.\\
+\\
+Nous utilisons 2 classes :
+
+- **KaplanMeierFitter** est une classe de Lifelines qui permet de constuire une courbe de survie en tenant compte des
+données censurées, c'est-à-dire les individus qui quittent l'étude sans avoir connu l'événement d'intérêt (ici la mort).
+
+- **CoxPHFitter** est une autre classe de Lifelines qui implémente la régression de Cox. Elle permet de modéliser une
+relation entre les variables explicatives et le risque relatif de décès.
 
 ### Streamlit :
 
@@ -78,14 +86,21 @@ ajoutant des événements, des animations et des liens.
 
 ### Matplotlib :
 
-Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer des graphiques statiques.
+Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer des graphiques statiques.\\
 Matplotlib.pyplot, souvent abrégé en plt, est un module de Matplotlib qui fournit une interface de programmation
 similaire à celle de MATLAB pour créer des graphiques en utilisant des commandes simples.
 
 ## Présentation du code :
 
 Le code est trouvable dans les fichiers main.py, constant.py et est commenté.\\
-Il est également trouvable tout au long de ce site via l'option "Montrer le code".
+Il est également trouvable tout au long de ce site via l'option "Montrer le code".\\
+Des différences peuvent exister entre les 2 versions soit à cause d'un oubli de mise à jour après modification,
+soit pour des soucis de lisibilité et de compréhension pour la version en ligne. En règle générale, le code affichée
+sur le site est écrit dans une fonction dans le fichier main.py.\\
+**Vous pouvez trouver plus d'informations sur la structure du projet [ici](/rapport).**
+
+Le fichier text.py permet d'afficher le texte dans les pages en allégeant le fichier main.py.\\
+Le fichier code_text.py permet d'afficher le code dans les pages en allégeant le fichier main.py.
 """
 
 presentation_data = """
