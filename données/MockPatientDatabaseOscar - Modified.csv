@@ -38,7 +38,7 @@ Numero_paciente;Genero;IMC;Regimenafiliacion;Anemia;Hipercalcemia;ERC_Leve;ERC_m
 1037;M;29.24210864;Contributivo;NO;SI;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;SI;NO;;Estadio 2;Acido selendronico;75;81;0;104;28/08/2018;EP;1;188;DLd;DLd;50 - 64
 1038;M;19.70553242;Básico;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;NO;NO;NO;;Estadio 3;Acido selendronico;75;68;0;133;17/05/2019;EP;1;205;DLd;DLd;> 65
 1039;F;16.70620468;Subsidiado;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;NO;;Estadio 2;Acido selendronico;90;83;0;52;07/04/2019;EP;1;52;DLd;DLd;50 - 64
-1040;F;20.19557823;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;Candidato Trasplante;Estadio 2;Acido selendronico;100;79;0;47;01/04/2020;EP;1;133;DLd;DLd;> 65
+1341;F;20.19557823;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;Candidato Trasplante;Estadio 2;Acido selendronico;100;79;0;47;01/04/2020;EP;1;133;DLd;DLd;> 65
 1040;F;20.19557823;Contributivo;NO;NO;NO;NO;NO;NO;NO;NO;SI;SI;NO;SI;NO;NO;Candidato Trasplante;No clasificable;Acido selendronico;100;89;0;13;30/07/2020;EP;1;112;P;P;50 - 64
 1041;F;22;Contributivo;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;SI;SD;NO;No clasificable;Estadio 2;Acido selendronico;25;79;0;165;15/08/2019;EP;0;140;BLd;BLd;> 65
 1042;M;19.70553242;Básico;SI;NO;NO;NO;NO;NO;NO;NO;SI;NO;NO;NO;NO;NO;Riesgo Alto;Estadio 2;Acido selendronico;45;99;0;67;07/01/2018;NA;0;61;Ld;BTd;50 - 64
