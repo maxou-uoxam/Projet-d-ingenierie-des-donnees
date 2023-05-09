@@ -702,10 +702,10 @@ def top_menu() -> None:
             )
             if show_datatable:
                 st.write(survival_prediction)
-        except Exception:
+        except Exception as e:
             st.error(
-                body="Un problème a été rencontré avec ces colonnes veuillez \
-                choisir d\'autres colonnes dans le menu latéral",
+                body=f"Un problème a été rencontré avec ces colonnes veuillez \
+                choisir d\'autres colonnes dans le menu latéral {e}",
                 icon="🚨"
             )
 
