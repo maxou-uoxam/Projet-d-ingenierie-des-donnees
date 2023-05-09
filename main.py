@@ -683,25 +683,31 @@ def top_menu() -> None:
     if menu == "prédiction_cox":
         "# 🔎 Prédiction de survie d'un individu avec le modèle de Cox"
         # Création du modèle de régression de Cox et des colonnes ayant été utilisées.
-        cph, choices = create_cox_model(data=data_transform_filtered)
+        try:
+            cph, choices = create_cox_model(data=data_transform_filtered)
+            # Création d'un nouvel individu pour lequel on veut prédire la survie
+            new_individual = create_new_individu(data=data_transform_filtered, columns=choices)
 
-        # Création d'un nouvel individu pour lequel on veut prédire la survie
-        new_individual = create_new_individu(data=data_transform_filtered, columns=choices)
+            # Prédiction de la survie pour le nouvel individu
+            survival_prediction = cph.predict_survival_function(new_individual)
 
-        # Prédiction de la survie pour le nouvel individu
-        survival_prediction = cph.predict_survival_function(new_individual)
+            # Création du graphique de survie avec plotly
+            plot_survival_prediction_with_cox(survival_prediction)
 
-        # Création du graphique de survie avec plotly
-        plot_survival_prediction_with_cox(survival_prediction)
-
-        # Afficher les données sous forme de tableau
-        show_datatable = st.checkbox(
-            label="Montrer les données sous forme de table",
-            value=False,
-            key="show_datatable_survival_prediction",
-        )
-        if show_datatable:
-            st.write(survival_prediction)
+            # Afficher les données sous forme de tableau
+            show_datatable = st.checkbox(
+                label="Montrer les données sous forme de table",
+                value=False,
+                key="show_datatable_survival_prediction",
+            )
+            if show_datatable:
+                st.write(survival_prediction)
+        except Exception:
+            st.error(
+                body="Un problème a été rencontré avec ces colonnes veuillez \
+                choisir d\'autres colonnes dans le menu latéral",
+                icon="🚨"
+            )
 
         print_code(
             text=code_text.survival_prediction,
