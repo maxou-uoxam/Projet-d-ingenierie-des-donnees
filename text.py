@@ -97,7 +97,7 @@ Il est également trouvable tout au long de ce site via l'option "Montrer le cod
 Des différences peuvent exister entre les 2 versions soit à cause d'un oubli de mise à jour après modification,
 soit pour des soucis de lisibilité et de compréhension pour la version en ligne. En règle générale, le code affichée
 sur le site est écrit dans une fonction dans le fichier main.py.\\
-**Vous pouvez trouver plus d'informations sur la structure du projet [ici](/rapport).**
+**Vous pouvez trouver plus d'informations sur la structure du projet dans le fichier \"Rapport.docx\"**
 
 Le fichier text.py permet d'afficher le texte dans les pages en allégeant le fichier main.py.\\
 Le fichier code_text.py permet d'afficher le code dans les pages en allégeant le fichier main.py.
@@ -216,9 +216,6 @@ presentation_transformation_tranche_age = """
 
 ### Ajout de la variable tranche d'âge
 
-Nous avons ajouté la variable **tranche_age** qui donne un âge aléatoire au patient entre 16 ans (âge légal à partir
-duquel un enfant peut répondre à un questionnaire sans autorisation parentale) et 112 ans (âge de la doyenne en France
-en 2023).\\
-Suivant l'âge qui est donné, le patient fera parti de la tranche d'âge des *moins de 50 ans*, *entre 50 et 64 ans* ou
-des *plus de 65 ans*.
+Nous avons ajouté la variable **tranche_age** qui donne une tranche d'âge aléatoire *moins de 50 ans*,
+*entre 50 et 64 ans* ou *plus de 65 ans*.
 """

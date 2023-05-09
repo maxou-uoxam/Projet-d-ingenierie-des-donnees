@@ -61,15 +61,20 @@ def print_code(text: str, key: str, separator: bool = False, show_code_by_defaul
         st.code(text, 'python')
 
 
-def transform_data(data: pd.DataFrame) -> pd.DataFrame:
+def transform_data() -> pd.DataFrame:
     """
-    Applique des transformations au données de base data obtenue avec le fichier "MockPatientDatabaseOscar.csv".\\
+    Applique des transformations au données de base data obtenue avec le fichier
+    "MockPatientDatabaseOscar - Modified.csv".\\
     Dans l'ordre :
     - Ajout de la variable time2 qui indique le temps avant hospitalisation (0<time2<time).
     - Ajout de la variable hospitalisation qui indique si le patient a été  hospitalisé ou non
     (environ 1/3 oui et 2/3 non).
-    - Ajout de la tranche d'âge du patient (< 50 ans, entre 50 ans et 64 ans, 65+).
     """
+    # Récupération des données :
+    data = pd.read_csv(constant.data_modified_file, sep=";", encoding='latin-1')
+    # Renommage colonne
+    data.rename(columns={'Tranche d\'âge': 'tranche_age'}, inplace=True)
+
     # Parcours les lignes du dataFrame
     for i in range(len(data.index)):
         # Créer la variable time2 compris entre [1; time - 1]
@@ -84,17 +89,6 @@ def transform_data(data: pd.DataFrame) -> pd.DataFrame:
         # Sinon (2 chances sur 3), le patient n'est pas hospitalisé.
         else:
             data.loc[i, 'hospitalisation'] = False
-
-        # Créer la variable age entre 16 ans (âge légal pour répondre à des questionnaires sans autorisation parentale)
-        # et 112 ans (âge de la doyenne française en 2023).
-        age = randint(16, 112)
-        # En fonction du résultat, le patient fait partie d'une tranche d'âge différente.
-        if age < 50:
-            data.loc[i, 'tranche_age'] = "Age < 50"
-        elif age < 65:
-            data.loc[i, 'tranche_age'] = "Age 50 - 64"
-        else:
-            data.loc[i, 'tranche_age'] = "Age 65+"
     return data
 
 
@@ -614,7 +608,6 @@ def top_menu() -> None:
         st.write(text.presentation_transformation_hospitalisation)
         print_code(code_text.code_hospitalisation, "hospital")
         st.write(text.presentation_transformation_tranche_age)
-        print_code(code_text.code_tranche_age, "tranche_age")
     # Affichage des statistiques descriptives
     if menu == "stats":
         "# 🧮 Statistiques descriptives"
@@ -724,6 +717,7 @@ def top_menu() -> None:
 def left_menu() -> dict:
     """
     Affiche des éléments dans le menu vertical gauche (natif à streamlit).
+    Propose les colonnes à filtrer en 2 onglets.
     """
     filters = {}
     tab1, tab2 = st.sidebar.tabs(["Choix des colonnes à filrer", "Filtres"])
@@ -748,7 +742,7 @@ def left_menu() -> dict:
 # Charge les données
 data = load_original_data()
 # Charge les données transformées
-data_transform = transform_data(data)
+data_transform = transform_data()
 
 # Page web :
 top_menu()

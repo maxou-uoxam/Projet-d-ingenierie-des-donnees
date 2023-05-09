@@ -24,6 +24,7 @@ for i in range(len(data.index)):
         data.loc[i, 'hospitalisation'] = False
 """
 
+# Plus utilisé mais je garde au cas où
 code_tranche_age = """
 # Parcours les lignes du dataFrame
 for i in range(len(data.index)):

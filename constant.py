@@ -1,5 +1,6 @@
 # Chemin vers le fichier de données.
 data_file = "données/MockPatientDatabaseOscar.csv"
+data_modified_file = "données/MockPatientDatabaseOscar - Modified.csv"
 
 # Création du menu :
 #   id : identifiant de l'onglet (facultatif).

@@ -3,3 +3,7 @@ plotly==5.13.1
 matplotlib==3.6.2
 hydralit_components
 numpy
+streamlit
+pandas
+random
+typing
